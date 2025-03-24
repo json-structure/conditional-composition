@@ -3,7 +3,7 @@
 title: "JSON Structure Conditional Composition"
 category: info
 
-docname: draft-vasters-httpapi-json-structure-conditional-composition
+docname: draft-vasters-httpapi-json-structure-conditional-composition-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
