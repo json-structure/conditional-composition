@@ -32,9 +32,9 @@ normative:
   RFC2119:
   RFC4646:
   RFC8174:
-  JSTRUCT-CORE: 
+  JSTRUCT-CORE:
     title: "JSON Structure Core"
-    author: 
+    author:
       - fullname: Clemens Vasters
     target: https://json-structure.github.io/core/draft-vasters-httpapi-json-structure-core.html
 
@@ -48,7 +48,7 @@ This document specifies JSON Structure Conditional Composition, an extension to
 JSON Structure Core that introduces composition constructs for combining multiple
 schema definitions. In particular, this specification defines the semantics,
 syntax, and constraints for the keywords `allOf`, `anyOf`, `oneOf`, and `not`,
-as well as the `if`/`then`/`else` conditional construct. 
+as well as the `if`/`then`/`else` conditional construct.
 
 
 --- middle
