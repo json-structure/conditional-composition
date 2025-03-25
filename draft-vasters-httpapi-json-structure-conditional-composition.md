@@ -1,6 +1,6 @@
 ---
 
-title: "JSON Structure Conditional Composition"
+title: "JSON Structure: Conditional Composition"
 category: info
 
 docname: draft-vasters-httpapi-json-structure-conditional-composition
