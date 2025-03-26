@@ -3,24 +3,24 @@
 title: "JSON Structure: Conditional Composition"
 category: info
 
-docname: draft-vasters-httpapi-json-structure-conditional-composition-latest
+docname: draft-vasters-json-structure-conditional-composition-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus: true
 v: 3
-area: ""
-workgroup: "Building Blocks for HTTP APIs"
+area: AREA
+workgroup:  WG Working Group
 keyword:
  - JSON
  - schema
 venue:
-  group: "Building Blocks for HTTP APIs"
-  type: ""
-  mail: "httpapi@ietf.org"
-  arch: "https://mailarchive.ietf.org/arch/browse/httpapi/"
+  group: WG
+  type: Working Group
+  mail: WG@example.com
+  arch: https://example.com/WG
   github: "json-structure/conditional-composition"
-  latest: "https://json-structure.github.io/conditional-composition/draft-vasters-httpapi-json-structure-conditional-composition.html"
+  latest: "https://json-structure.github.io/conditional-composition/draft-vasters-json-structure-conditional-composition.html"
 
 author:
  -
@@ -36,7 +36,7 @@ normative:
     title: "JSON Structure Core"
     author:
       - fullname: Clemens Vasters
-    target: https://json-structure.github.io/core/draft-vasters-httpapi-json-structure-core.html
+    target: https://json-structure.github.io/core/draft-vasters-json-structure-core.html
 
 informative:
 
