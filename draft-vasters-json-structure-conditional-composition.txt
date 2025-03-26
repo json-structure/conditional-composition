@@ -79,6 +79,7 @@ Table of Contents
      4.3.  oneOf
      4.4.  not
      4.5.  if/then/else
+     4.6.  Enabling the Extensions
    5.  Security Considerations
    6.  IANA Considerations
    7.  Normative References
@@ -371,6 +372,37 @@ Table of Contents
    {
      "a": 42,
      "c": false
+   }
+
+4.6.  Enabling the Extensions
+
+   The conditional composition extensions can be enabled in a schema or
+   meta-schema by adding the JSONSchemaConditionalComposition key to the
+   $uses clause when referencing the extended meta-schema:
+
+   {
+     "$schema": "https://json-structure.github.io/meta/extended/v0/#",
+     "$id": "myschema",
+     "$uses": [
+       "JSONSchemaConditionalComposition"
+     ],
+     "oneOf" : [
+       { "type": "string" },
+       { "type": "number" }
+     ]
+   }
+
+   Conditional composition is enabled by default in the validation meta-
+   schema:
+
+   {
+     "$schema": "https://json-structure.github.io/meta/validation/v0/#",
+     "$id": "myschema",
+     "type": "object",
+     "oneOf" : [
+       { "type": "string" },
+       { "type": "number" }
+     ]
    }
 
 5.  Security Considerations
