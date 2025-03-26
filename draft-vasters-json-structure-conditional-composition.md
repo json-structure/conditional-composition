@@ -311,6 +311,41 @@ or
 }
 ~~~
 
+## Enabling the Extensions {#enabling-the-extensions}
+
+The conditional composition extensions can be enabled in a schema or meta-schema
+by adding the `JSONSchemaConditionalComposition` key to the `$uses` clause when
+referencing the extended meta-schema:
+
+~~~ json
+{
+  "$schema": "https://json-structure.github.io/meta/extended/v0/#",
+  "$id": "myschema",
+  "$uses": [
+    "JSONSchemaConditionalComposition"
+  ],
+  "oneOf" : [
+    { "type": "string" },
+    { "type": "number" }
+  ]
+}
+~~~
+
+Conditional composition is enabled by default in the validation meta-schema:
+
+~~~ json
+{
+  "$schema": "https://json-structure.github.io/meta/validation/v0/#",
+  "$id": "myschema",
+  "type": "object",
+  "oneOf" : [
+    { "type": "string" },
+    { "type": "number" }
+  ]
+}
+~~~
+
+
 # Security Considerations {#security-considerations}
 
 - The use of composition keywords does not alter the security model of JSON Structure Core; however, excessive nesting or overly complex compositions may impact performance and resource usage.
