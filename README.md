@@ -1,8 +1,8 @@
 <!-- regenerate: on (set to off if you edit this file) -->
 
-# JSON Structure Conditional Composition
+# JSON Structure: Conditional Composition
 
-This is the working area for the individual Internet-Draft, "JSON Structure Conditional Composition".
+This is the working area for the individual Internet-Draft, "JSON Structure: Conditional Composition".
 
 * [Editor's Copy](https://json-structure.github.io/conditional-composition/#go.draft-vasters-json-structure-conditional-composition.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-vasters-json-structure-conditional-composition)
