@@ -319,7 +319,7 @@ referencing the extended meta-schema:
 
 ~~~ json
 {
-  "$schema": "https://json-structure.github.io/meta/extended/v0/#",
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
   "$id": "myschema",
   "$uses": [
     "JSONSchemaConditionalComposition"
@@ -335,7 +335,7 @@ Conditional composition is enabled by default in the validation meta-schema:
 
 ~~~ json
 {
-  "$schema": "https://json-structure.github.io/meta/validation/v0/#",
+  "$schema": "https://json-structure.org/meta/validation/v0/#",
   "$id": "myschema",
   "type": "object",
   "oneOf" : [
