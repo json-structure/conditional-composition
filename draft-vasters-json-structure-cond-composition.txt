@@ -9,7 +9,7 @@ Expires: 3 January 2026
 
 
                 JSON Structure: Conditional Composition
-      draft-vasters-json-structure-conditional-composition-latest
+          draft-vasters-json-structure-cond-composition-latest
 
 Abstract
 
@@ -26,9 +26,9 @@ About This Document
 
    The latest revision of this draft can be found at https://json-
    structure.github.io/conditional-composition/draft-vasters-json-
-   structure-conditional-composition.html.  Status information for this
+   structure-cond-composition.html.  Status information for this
    document may be found at https://datatracker.ietf.org/doc/draft-
-   vasters-json-structure-conditional-composition/.
+   vasters-json-structure-cond-composition/.
 
 
    Source for this draft and an issue tracker can be found at
