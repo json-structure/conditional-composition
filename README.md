@@ -4,10 +4,10 @@
 
 This is the working area for the individual Internet-Draft, "JSON Structure: Conditional Composition".
 
-* [Editor's Copy](https://json-structure.github.io/conditional-composition/#go.draft-vasters-json-structure-conditional-composition.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-vasters-json-structure-conditional-composition)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-vasters-json-structure-conditional-composition)
-* [Compare Editor's Copy to Individual Draft](https://json-structure.github.io/conditional-composition/#go.draft-vasters-json-structure-conditional-composition.diff)
+* [Editor's Copy](https://json-structure.github.io/conditional-composition/#go.draft-vasters-json-structure-cond-composition.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-vasters-json-structure-cond-composition)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-vasters-json-structure-cond-composition)
+* [Compare Editor's Copy to Individual Draft](https://json-structure.github.io/conditional-composition/#go.draft-vasters-json-structure-cond-composition.diff)
 
 
 ## Contributing

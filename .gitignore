@@ -17,7 +17,7 @@
 /versioned/
 Gemfile.lock
 archive.json
-draft-vasters-json-structure-conditional-composition.xml
+draft-vasters-json-structure-cond-composition.xml
 package-lock.json
 report.xml
 !requirements.txt

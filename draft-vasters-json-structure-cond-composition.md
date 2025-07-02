@@ -3,7 +3,7 @@
 title: "JSON Structure: Conditional Composition"
 category: std
 
-docname: draft-vasters-json-structure-conditional-composition-latest
+docname: draft-vasters-json-structure-cond-composition-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date: 2025-07-02
@@ -18,7 +18,7 @@ venue:
   mail: TBD
   arch: TBD
   github: "json-structure/conditional-composition"
-  latest: "https://json-structure.github.io/conditional-composition/draft-vasters-json-structure-conditional-composition.html"
+  latest: "https://json-structure.github.io/conditional-composition/draft-vasters-json-structure-cond-composition.html"
 
 author:
  -
