@@ -6,7 +6,7 @@ category: std
 docname: draft-vasters-json-structure-cond-composition-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
-date: 2025-07-02
+date: 2025-12-04
 consensus: true
 v: 3
 area: Web and Internet Transport
@@ -354,6 +354,11 @@ Conditional composition is enabled by default in the validation meta-schema:
 This document does not require any IANA actions.
 
 --- back
+
+# Changes from draft-vasters-json-structure-cond-composition-00
+{:numbered="false"}
+
+- No changes; date update only.
 
 # Acknowledgments
 {:numbered="false"}
