@@ -80,6 +80,7 @@ Table of Contents
    5.  Security Considerations
    6.  IANA Considerations
    7.  Normative References
+   Changes from draft-vasters-json-structure-cond-composition-01
    Changes from draft-vasters-json-structure-cond-composition-00
    Acknowledgments
    Author's Address
@@ -432,6 +433,15 @@ Table of Contents
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+Changes from draft-vasters-json-structure-cond-composition-01
+
+   *  Aligned introduction terminology with document title ("Conditional
+      Composition" instead of "Conditionals").
+
+   *  Improved awkward sentence structure in the introduction.
+
+   *  Removed unused/obsolete RFC 4646 from normative references.
 
 Changes from draft-vasters-json-structure-cond-composition-00
 
