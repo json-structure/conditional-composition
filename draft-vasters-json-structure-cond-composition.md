@@ -354,6 +354,14 @@ This document does not require any IANA actions.
 
 --- back
 
+# Changes from draft-vasters-json-structure-cond-composition-01
+{:numbered="false"}
+
+- Aligned introduction terminology with document title ("Conditional
+  Composition" instead of "Conditionals").
+- Improved awkward sentence structure in the introduction.
+- Removed unused/obsolete RFC 4646 from normative references.
+
 # Changes from draft-vasters-json-structure-cond-composition-00
 {:numbered="false"}
 
