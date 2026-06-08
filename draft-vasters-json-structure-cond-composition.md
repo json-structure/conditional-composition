@@ -28,7 +28,6 @@ author:
 
 normative:
   RFC2119:
-  RFC4646:
   RFC8174:
   JSTRUCT-CORE:
     title: "JSON Structure Core"
@@ -53,7 +52,7 @@ as well as the `if`/`then`/`else` conditional construct.
 
 # Introduction {#introduction}
 
-This document specifies JSON Structure Conditionals, an extension to JSON Structure Core {{JSTRUCT-CORE}} that introduces conditional composition constructs for combining multiple schema definitions. In particular, this specification defines the semantics, syntax, and constraints for the keywords `allOf`, `anyOf`, `oneOf`, and `not`, as well as the `if`/`then`/`else` conditional construct.
+This document specifies JSON Structure Conditional Composition, an extension to JSON Structure Core {{JSTRUCT-CORE}} that introduces conditional composition constructs for combining multiple schema definitions. In particular, this specification defines the semantics, syntax, and constraints for the keywords `allOf`, `anyOf`, `oneOf`, and `not`, as well as the `if`/`then`/`else` conditional construct.
 
 # Terminology and Conventions {#terminology-and-conventions}
 
@@ -67,7 +66,7 @@ The keywords introduced in this document extend the set of keywords allowed for 
 
 The focus of JSON Structure Core is on data definitions. The conditional composition keywords introduced in this document allow authors to define conditional matching rules that use these fundamental data definitions.
 
-A schema document using these keywords is not a data definition but a rule set for evaluating JSON node instances against schema definitions and lays the groundwork for validation.
+A schema document using these keywords is not a data definition; rather, it is a rule set for evaluating JSON node instances against schema definitions and for laying the groundwork for validation.
 
 Fundamentally, evaluating a JSON node against a schema involves matching the node against the schema's constraints.
 
