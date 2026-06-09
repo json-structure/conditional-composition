@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-06-07T04:12:16.570634+00:00",
+  "timestamp": "2026-06-09T03:47:48.770843+00:00",
   "repo": "json-structure/conditional-composition",
   "labels": [
     {
@@ -49,6 +49,80 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
-  "pulls": []
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOONqfKc8AAAABEs8cFA",
+      "title": "Editorial: title mismatch, awkward phrasing, unused RFC4646 reference",
+      "url": "https://github.com/json-structure/conditional-composition/issues/1",
+      "state": "CLOSED",
+      "author": "clemensv",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The following minor editorial issues were found during review:\n\n### 1. Introduction says \"JSON Structure Conditionals\" \u2014 should match document title\n\nThe introduction names the extension \"JSON Structure Conditionals\" but the document title and abstract use \"JSON Structure Conditional Composition\". These should be consistent.\n\n### 2. Awkward sentence structure\n\n> A schema document using these keywords is not a data definition but a rule set for evaluating JSON node instances against schema definitions and lays the groundwork for validation.\n\nThe coordination is unclear. Suggested rewrite:\n> A schema document using these keywords is not a data definition; rather, it is a rule set for evaluating JSON node instances against schema definitions and for laying the groundwork for validation.\n\n### 3. Unused/obsolete RFC4646 reference (line 31)\n\n`RFC4646` appears in the references block but is obsolete and does not appear to be cited in the document body. It should be removed (or updated to `RFC5646` if a citation is needed).",
+      "createdAt": "2026-06-08T06:28:01Z",
+      "updatedAt": "2026-06-08T09:30:00Z",
+      "closedAt": "2026-06-08T09:30:00Z",
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 2,
+      "id": "PR_kwDOONqfKc7j0Qs4",
+      "title": "Editorial: fix title mismatch, phrasing, remove unused RFC4646",
+      "url": "https://github.com/json-structure/conditional-composition/pull/2",
+      "state": "MERGED",
+      "author": "clemensv",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- Align introduction with document title: 'Conditional Composition' not 'Conditionals'\n- Improve awkward sentence coordination\n- Remove unused/obsolete RFC4646 from normative references\n\nFixes #1",
+      "createdAt": "2026-06-08T08:30:20Z",
+      "updatedAt": "2026-06-08T09:30:06Z",
+      "baseRepository": "json-structure/conditional-composition",
+      "baseRefName": "main",
+      "baseRefOid": "aa301929e2f9b2f9d0fe33fc5ede7b2c4a806a48",
+      "headRepository": "json-structure/conditional-composition",
+      "headRefName": "editorial/fix-title-phrasing-and-unused-ref",
+      "headRefOid": "c4ce10b26a3a4877c1c0dc7adda003f29d2bec38",
+      "closedAt": "2026-06-08T09:29:59Z",
+      "mergedAt": "2026-06-08T09:29:59Z",
+      "mergedBy": "clemensv",
+      "mergeCommit": {
+        "oid": "cf9e32d2a2a4da17d627f5ba56639dd46c4243cf"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOONqfKc7j2YXb",
+      "title": "Update changes section for draft-02",
+      "url": "https://github.com/json-structure/conditional-composition/pull/3",
+      "state": "MERGED",
+      "author": "clemensv",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Adds the changes section documenting updates since draft-vasters-json-structure-cond-composition-01.",
+      "createdAt": "2026-06-08T10:01:44Z",
+      "updatedAt": "2026-06-08T15:22:42Z",
+      "baseRepository": "json-structure/conditional-composition",
+      "baseRefName": "main",
+      "baseRefOid": "cf9e32d2a2a4da17d627f5ba56639dd46c4243cf",
+      "headRepository": "json-structure/conditional-composition",
+      "headRefName": "editorial/update-changes-section",
+      "headRefOid": "baa2c4144dca0d32e1aa3c00fc6c0c75bbfa8d4f",
+      "closedAt": "2026-06-08T15:22:42Z",
+      "mergedAt": "2026-06-08T15:22:42Z",
+      "mergedBy": "clemensv",
+      "mergeCommit": {
+        "oid": "c4bcb70a996d732730d91870a85b56eb1e5018f7"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
