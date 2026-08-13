@@ -262,18 +262,21 @@ Consider the following schema:
 ~~~json
 {
   "if": {
+    "type": "object",
     "properties": {
       "a": { "type": "string" }
     },
     "required": ["a"]
   },
   "then": {
+    "type": "object",
     "properties": {
       "b": { "type": "number" }
     },
     "required": ["b"]
   },
   "else": {
+    "type": "object",
     "properties": {
       "c": { "type": "boolean" }
     },
@@ -281,6 +284,12 @@ Consider the following schema:
   }
 }
 ~~~
+
+As with every other schema object introduced by this document (`allOf`,
+`anyOf`, `oneOf`, `not`), each of `if`, `then`, and `else` is itself a schema
+object under JSON Structure Core {{JSTRUCT-CORE}} and MUST carry a `type`
+keyword; `properties` alone does not establish that the node is constrained
+to be an `object`.
 
 Here, a JSON node evaluates to `true` if it is an object with a property `a` that is a string; then it must also have a property `b` that is a number:
 
@@ -311,7 +320,7 @@ or
 ## Enabling the Extensions {#enabling-the-extensions}
 
 The conditional composition extensions can be enabled in a schema or meta-schema
-by adding the `JSONSchemaConditionalComposition` key to the `$uses` clause when
+by adding the `JSONStructureConditionalComposition` key to the `$uses` clause when
 referencing the extended meta-schema:
 
 ~~~ json
@@ -319,7 +328,7 @@ referencing the extended meta-schema:
   "$schema": "https://json-structure.org/meta/extended/v0/#",
   "$id": "myschema",
   "$uses": [
-    "JSONSchemaConditionalComposition"
+    "JSONStructureConditionalComposition"
   ],
   "oneOf" : [
     { "type": "string" },
