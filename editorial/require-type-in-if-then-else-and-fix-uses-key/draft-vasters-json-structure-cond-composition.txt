@@ -4,8 +4,8 @@
 
 Building Blocks for HTTP APIs                                 C. Vasters
 Internet-Draft                                     Microsoft Corporation
-Intended status: Standards Track                         4 December 2025
-Expires: 7 June 2026
+Intended status: Standards Track                             9 June 2026
+Expires: 11 December 2026
 
 
                 JSON Structure: Conditional Composition
@@ -49,11 +49,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 June 2026.
+   This Internet-Draft will expire on 11 December 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -80,6 +80,7 @@ Table of Contents
    5.  Security Considerations
    6.  IANA Considerations
    7.  Normative References
+   Changes from draft-vasters-json-structure-cond-composition-01
    Changes from draft-vasters-json-structure-cond-composition-00
    Acknowledgments
    Author's Address
@@ -330,24 +331,33 @@ Table of Contents
 
    {
      "if": {
+       "type": "object",
        "properties": {
          "a": { "type": "string" }
        },
        "required": ["a"]
      },
      "then": {
+       "type": "object",
        "properties": {
          "b": { "type": "number" }
        },
        "required": ["b"]
      },
      "else": {
+       "type": "object",
        "properties": {
          "c": { "type": "boolean" }
        },
        "required": ["c"]
      }
    }
+
+   As with every other schema object introduced by this document (allOf,
+   anyOf, oneOf, not), each of if, then, and else is itself a schema
+   object under JSON Structure Core [JSTRUCT-CORE] and MUST carry a type
+   keyword; properties alone does not establish that the node is
+   constrained to be an object.
 
    Here, a JSON node evaluates to true if it is an object with a
    property a that is a string; then it must also have a property b that
@@ -375,14 +385,14 @@ Table of Contents
 4.6.  Enabling the Extensions
 
    The conditional composition extensions can be enabled in a schema or
-   meta-schema by adding the JSONSchemaConditionalComposition key to the
-   $uses clause when referencing the extended meta-schema:
+   meta-schema by adding the JSONStructureConditionalComposition key to
+   the $uses clause when referencing the extended meta-schema:
 
    {
      "$schema": "https://json-structure.org/meta/extended/v0/#",
      "$id": "myschema",
      "$uses": [
-       "JSONSchemaConditionalComposition"
+       "JSONStructureConditionalComposition"
      ],
      "oneOf" : [
        { "type": "string" },
@@ -432,6 +442,15 @@ Table of Contents
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+Changes from draft-vasters-json-structure-cond-composition-01
+
+   *  Aligned introduction terminology with document title ("Conditional
+      Composition" instead of "Conditionals").
+
+   *  Improved awkward sentence structure in the introduction.
+
+   *  Removed unused/obsolete RFC 4646 from normative references.
 
 Changes from draft-vasters-json-structure-cond-composition-00
 
